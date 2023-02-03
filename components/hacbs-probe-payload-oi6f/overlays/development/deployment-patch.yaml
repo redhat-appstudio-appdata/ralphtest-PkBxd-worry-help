@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-probe-payload-oi6f
+  namespace: ralphjbean-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b6cd62b267238691ff068abd6148fb53c7ffaf74e022795284032255cd9706cd
+        name: container-image
+        resources: {}
+status: {}
