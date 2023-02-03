@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: ralphtest
+    appstudio.openshift.io/component: hacbs-probe-payload-oi6f
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: hacbs-probe-payload-oi6f
+  namespace: ralphjbean-tenant
+spec:
+  url: https://github.com/ralphbean/hacbs-probe-payload/
