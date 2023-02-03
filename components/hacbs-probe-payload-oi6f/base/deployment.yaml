@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: hacbs-probe-payload-oi6f
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ralphjbean-tenant-hacbs-probe-payload-oi6f
+      - image: quay.io/redhat-appstudio/user-workload@sha256:b6cd62b267238691ff068abd6148fb53c7ffaf74e022795284032255cd9706cd
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
